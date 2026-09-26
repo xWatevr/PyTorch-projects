@@ -66,9 +66,9 @@ for epoch in range(epochs):
     loss = loss_fn(y_pred, y_train)
     # 3. Zero gradient optimizer
     optimizer.zero_grad()
-    # 4. Loss backward
+    # 4. Backpropagation
     loss.backward()
-    # 5. Step optimizer
+    # 5. Gradient descent
     optimizer.step()
 
     #Evaluate
